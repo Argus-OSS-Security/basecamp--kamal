@@ -1,15 +1,16 @@
 name: Docker
 
-on:
-  workflow_dispatch:
-    inputs:
-      tagInput:
-        description: 'Tag'
-        required: true
-    
-  release:
-    types: [created]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       tagInput:
+#         description: 'Tag'
+#         required: true
+#     
+#   release:
+#     types: [created]
+# 
 permissions: {}
 
 jobs:
